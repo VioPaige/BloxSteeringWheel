@@ -91,7 +91,7 @@ local WheelController = require(script:WaitForChild("BloxSteeringWheel"))
         local listenerId = nil
 
         listenerId = WheelController.on(`yChanged`, nil, function(y, yDelta) -- adds event listener
-            if not shouldListenToY then WheelController.removeListener(`yChanged`, nil, listenerId)
+            if not shouldListenToY then WheelController.removeListener(`yChanged`, nil, listenerId) end
         end)
         ```
   
